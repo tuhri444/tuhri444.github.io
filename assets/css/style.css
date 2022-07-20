@@ -1059,3 +1059,29 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+#footer .discord {
+    font-size:24px;
+    padding: 0;
+    border: none;
+    color: #0563bb;
+    outline: none;
+    
+    font-size: 18px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .discord:hover {
+    color: #fff;
+    background: #0678e3;
+    text-decoration: none;
+}
