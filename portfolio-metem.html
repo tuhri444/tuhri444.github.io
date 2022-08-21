@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>[Portfolio Item Name]</title>
+    <title>Met'em Park</title>
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
@@ -34,7 +34,7 @@
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">Project Title</h1>
+                <h1 style="text-align: center">Met'em Park</h1>
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
@@ -44,16 +44,20 @@
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
 
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                                <div class="swiper-slide" style="text-align: center;">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3cVLMJ-o0O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                                    <img src="assets/img/portfolio/details/metem/Networking%20research.png" alt="">
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                                    <img src="assets/img/portfolio/details/metem/Structure.png" alt="">
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/details/metem/blueprint.png" alt="">
                                 </div>
 
                             </div>
@@ -65,15 +69,21 @@
                         <div class="portfolio-info">
                             <h3>Project information</h3>
                             <h4><strong>Description</strong></h4>
-                            <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                            <p>During my 4th year of University, I got the opportunity to create a 'social meeting platform' for Abstraction Games. The goal was to create something they could use to hold after-work meet-ups.
+                                <br>
+                                <br>
+                                This project plays a big part in my development towards a better learning process. It took me completely out of my comfort zone and forced me to learn to work with a new Game Engine in a short period while simultaneously producing a product that could be further developed by Abstraction Games.
+                            </p>
                             <ul>
-
-                                <li><strong>Time</strong>: - </li>
-                                <li><strong>Team structure</strong>: - </li>
-                                <li><strong>Game Engine</strong>: - </li>
-                                <li><strong>Language</strong>: - </li>
-                                <li><strong>Roles</strong>: -- </li>
+                                <li><strong>Time</strong>: 20 weeks </li>
+                                <li><strong>Team structure</strong>: 2 designer, 2 engineers, 3 artists</li>
+                                <li><strong>Game Engine</strong>: Unreal Engine 4 </li>
+                                <li><strong>Language</strong>: C++ </li>
+                                <li><strong>Roles</strong>: Systems programmer, Networking programmer</li>
                             </ul>
+                            <p>
+                            <strong>Extra</strong>: The details gloss more over my experience and thought processes as I am unable to talk about the specifics of the project. 
+                            </p>
                         </div>
                     </div>
 
@@ -83,9 +93,27 @@
                     <div class="portfolio-description">
                         <h2>Details</h2>
 
-                        <h3>lorem ipsum</h3>
+                        <h3>The endless struggle for a networking solution</h3>
                         <p>
-                            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                            During the research phase of the project, it was my responsibility to research and select the networking solutions that will be used for the general gameplay feature networking', video transfer networking, and sound transfer networking. Due to the lack of scope for a single person, not all solutions could be tested in full and thus the selection had to be based on the given feature lists of each of the solutions that I was able to find for this project. 
+                            <br>
+                            <br>
+                            The choice was made to use a mix of solutions namely Photon,  for the general game networking; Agora, for the video transfer networking; Vivox for audio transfer networking. The problem with multiple solutions is that they each have their differences in implementation time and are usually not plug-and-play. This forced us to focus on the video and gameplay solutions while still keeping the audio solution in mind in the structure design process.
+                        </p>
+                        <br>
+
+                        <h3>Structured Systems</h3>
+                        <p>
+                            Due to the complexity of the project a set structure had to be created before any implementation would be able to take place. One of the key parts of the structure was the inclusion of the <a href="https://refactoring.guru/design-patterns/adapter/csharp/example">adapter pattern</a>. The idea behind this decision was to embrace adaptability as one of the core design pillars for the system. It gave Abstraction Games the ability to swap out the networking solutions to what they see fit.
+                        </p>
+                        <br>
+                        
+                        <h3>Blueprints</h3>
+                        <p>
+                            The part that I enjoyed the most was the creation of systems that exposed themselves as blueprints intended for use by the gameplay programmer. Various features were created that allowed data to be sent as packets toward the server host and then spread to the connected users. It allowed game modes, and various gameplay features to communicate and update the other users on events that are happening.
+                            <br>
+                            <br>
+                            Creating these tools and then seeing the puzzle pieces be put together to create new emergent functionality is a wonderful feeling and is one that I seek out when learning new topics.
                         </p>
                         <br>
 
@@ -152,6 +180,4 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-</body>
-
-</html>
+</body></html>
