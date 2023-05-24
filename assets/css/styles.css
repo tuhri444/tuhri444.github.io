@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(52,53,65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rectangle {
+    background-color: rgb(64,65,78);
+    height: 80vh;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.5), 
+                -20px -20px 60px rgba(255,255,255,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Changed to start from the top */
+    justify-content: space-around; /* Changed to space around for even spacing */
+    padding: 20px;
+    overflow: auto; /* To handle more squares than the rectangle can display */
+
+    /* For Firefox */
+    scrollbar-width: none;
+}
+
+/* For Webkit browsers */
+.rectangle::-webkit-scrollbar {
+    display: none;
+}
+
+/*---CONTENT SQUARES---*/
+
+.square-link {
+    height: 20vh; 
+    width: calc(50% - 40px); 
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+    text-decoration: none; /* to remove underline */
+}
+
+.square-link:hover {
+    top: -10px;
+}
+
+.square-link.pressed {
+    top: 0;
+    transition: top 0.2s ease; /* Faster fall when pressed */
+}
+
+/* Add a class for the cooldown animation */
+.square-link.cooldown {
+    animation: float-up 4s forwards; /* Slow rise over 4 seconds */
+}
+
+.square {
+    background-color: rgb(64,65,78);
+    height: 99%;  /* adjust as needed */
+    width: 99%;   /* adjust as needed */
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes float-up {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -10px;
+    }
+}
+
+/*---INNER PANEL---*/
+
+.inner-panel {
+    background-color: rgb(64,65,78);
+    height: 95%;
+    width: 95%;
+    border-radius: 18px; /* A bit smaller than the square's border-radius */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5), 
+                -10px -10px 30px rgba(255,255,255,0.1);
+}
