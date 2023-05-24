@@ -1,15 +1,30 @@
 body {
     background-color: rgb(52,53,65);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
+.landingtitle {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingtitle h1 {
+    height: 20vh;
+    font-size: 5em; /* Adjust this value to suit your desired size */
+    color: white; /* Or any color of your choice */
+    text-align: center;
+}
 .rectangle {
     background-color: rgb(64,65,78);
-    height: 80vh;
+    height: 70vh;
     width: 80vw;
     border-radius: 20px;
     box-shadow: 20px 20px 60px rgba(0,0,0,0.5), 
