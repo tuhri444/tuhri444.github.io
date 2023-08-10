@@ -8,12 +8,11 @@ const RedirectWithLink = () => {
     
     if (redirection == null){
         var linkToAR = "https://localhost:8000/public/index.html?redirect=";
-        const path = window.location.href;
-        console.log(path);
+        const path = window.location.pathname;
         const index = path.indexOf('/');
         var pathAddition = path.substring(index + 1);
-        console.log(pathAddition);
-        pathAddition = pathAddition.slice(0, -1);
+        const indexDot = path.indexOf('.');
+        pathAddition = pathAddition.slice(0, indexDot);
         console.log(pathAddition);
         if (index !== -1) {
             linkToAR += pathAddition;
