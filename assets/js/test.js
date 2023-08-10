@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   RedirectWithLink();
-}
+});
 
 const RedirectWithLink = () => {
     const urlParams = new URLSearchParams(window.location.search);
