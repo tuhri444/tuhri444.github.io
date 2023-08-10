@@ -12,7 +12,7 @@ const RedirectWithLink = () => {
         const index = path.indexOf('/');
         var pathAddition = path.substring(index + 1);
         const indexDot = path.indexOf('.');
-        pathAddition = pathAddition.slice(0, indexDot);
+        pathAddition = pathAddition.slice(0, indexDot-1);
         console.log(pathAddition);
         if (index !== -1) {
             linkToAR += pathAddition;
