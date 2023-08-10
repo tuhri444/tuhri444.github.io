@@ -7,7 +7,7 @@ const RedirectWithLink = () => {
     var redirection = urlParams.get('redirect');
     
     if (redirection == null){
-        var linkToAR = "adsquares.nl/AR-luigi?redirect=";
+        var linkToAR = "https://localhost:8000/public/index.html?redirect=";
         const path = window.location.host;
         const index = path.indexOf('/');
         var pathAddition = path.substring(index + 1);
