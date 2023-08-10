@@ -16,18 +16,15 @@ const RedirectWithLink = () => {
         console.log(pathAddition);
         if (index !== -1) {
             linkToAR += pathAddition;
-            
-            //Check if board game link
             if (pathAddition.includes("qrcodespel")){
                 linkToAR += "&boardgame=true";
             }
-            
-            //window.location.href = linkToAR;
+            window.location.href = linkToAR;
         }
         console.error('Couldn\'t get path from URL');
     }
     else{
-        //window.location.href = window.location.search;
+        window.location.href = window.location.search;
         return;
     }
 }
