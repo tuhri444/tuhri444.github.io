@@ -23,7 +23,7 @@ const RedirectWithLink = () => {
                 linkToAR += "&boardgame=true";
             }
             
-            window.location.href = linkToAR;
+            //window.location.href = linkToAR;
         }
         console.error('Couldn\'t get path from URL');
     }
