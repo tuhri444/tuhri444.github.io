@@ -13,6 +13,7 @@ const RedirectWithLink = () => {
         var pathAddition = path.substring(index + 1);
         pathAddition = pathAddition.slice(0, -1);
         if (index !== -1) {
+          console.log(pathAddition);
             linkToAR += pathAddition;
             
             //Check if board game link
