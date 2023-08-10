@@ -7,7 +7,7 @@ const RedirectWithLink = () => {
     var redirection = urlParams.get('redirect');
     
     if (redirection == null){
-        var linkToAR = "https://localhost:8000/public/index.html?redirect=";
+        var linkToAR = "https://192.168.1.201:8000/public/index.html?redirect=";
         const path = window.location.pathname;
         const index = path.indexOf('/');
         var pathAddition = path.substring(index + 1);
