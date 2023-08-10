@@ -24,7 +24,6 @@ const RedirectWithLink = () => {
         console.error('Couldn\'t get path from URL');
     }
     else{
-        window.location.href = window.location.search;
         return;
     }
 }
