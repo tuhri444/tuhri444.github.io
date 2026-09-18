@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Disco King</title>
+    <title>Disco King — Arjen de Aldrey</title>
+    <meta name="description" content="A rhythm arcade game written in C# on the GXP Engine, built in two weeks for a custom Arduino arcade machine at Saxion University.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-discoking.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="Disco King — Arjen de Aldrey">
+    <meta property="og:description" content="A rhythm arcade game written in C# on the GXP Engine, built in two weeks for a custom Arduino arcade machine at Saxion University.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-discoking.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/discoking-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disco King — Arjen de Aldrey">
+    <meta name="twitter:description" content="A rhythm arcade game written in C# on the GXP Engine, built in two weeks for a custom Arduino arcade machine at Saxion University.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/discoking-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,97 +39,126 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">Disco King</h1>
+                <h1 class="pd-title">Disco King</h1>
+                <p class="pd-subtitle">Rhythm-game prototype</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">GXPEngine</li>
+                    <li>C#</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Slideshow -->
-                    <div style="float:left" class="col-lg-7">
+                    <!-- Media -->
+                    <div class="col-lg-7">
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
-
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/Discoking/discoking.jpg" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/discoking/discoking.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/discoking/discoking.jpg" alt="Disco King title art: a pig bouncer guarding a velvet rope outside a purple club entrance." width="1366" height="768" loading="eager" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <video width="100%" height="100%" controls>
-                                        <source src="assets/img/portfolio/details/Discoking/DiscoKing-Promotrailer.mp4" type="video/mp4">
+                                    <video controls preload="metadata" poster="assets/img/portfolio/details/discoking/discoking-promotrailer-poster.jpg" width="100%">
+                                        <source src="assets/img/portfolio/details/discoking/discoking-promotrailer.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/Discoking/saturation.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/discoking/saturation.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/discoking/saturation.png" alt="Overhead view of the rhythm grid, with coloured spotlight cones marking dancer positions and a progress bar." width="1000" height="562" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/Discoking/tiled.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/discoking/tiled.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/discoking/tiled.jpg" alt="Track editor showing beat markers placed across several horizontal lanes." width="1600" height="848" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
-
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- Preview info -->
+
+                    <!-- Project information -->
                     <div class="col-lg-5">
                         <div class="portfolio-info">
                             <h3>Project information</h3>
-                            <h4><strong>Description</strong></h4>
-                            <p>A two week school project aimed at making us learn how to work with arduino and the 'GXP Engine'. The engine was created by the lovely teachers at Saxion University of Applied Sciences.
-                                This is a rhythm arcade game written C# made to run on a custom arcade machine.
-                                The project is one of my earliest and no longer reflex my skill but it is one that I hold dear to me and would love to rebuild when the time comes.
-                            </p>
+                            <p>A two week school project aimed at making us learn how to work with arduino and the &#x27;GXP Engine&#x27;. The engine was created by the lovely teachers at Saxion University of Applied Sciences. This is a rhythm arcade game written C# made to run on a custom arcade machine. The project is one of my earliest and no longer reflex my skill but it is one that I hold dear to me and would love to rebuild when the time comes.</p>
                             <ul>
-
-                                <li><strong>Time</strong>: 2 weeks </li>
-                                <li><strong>Team structure</strong>: 1 programmer, 2 designers, 3 artists </li>
-                                <li><strong>Game Engine</strong>: GXPEngine </li>
-                                <li><strong>Language</strong>: C# </li>
-                                <li><strong>Roles</strong>: Gameplay programmer, Tools programmer </li>
+                                <li><strong>Time</strong>: 2 weeks</li>
+                                <li><strong>Team structure</strong>: 1 programmer, 2 designers, 3 artists</li>
+                                <li><strong>Game Engine</strong>: GXPEngine</li>
+                                <li><strong>Language</strong>: C#</li>
+                                <li><strong>Roles</strong>: Gameplay programmer, Tools programmer</li>
                             </ul>
+
                         </div>
                     </div>
 
+                </div>
 
-                    <!-- Details -->
-                    <hr class="rounded" style="border-top: 3px solid;">
-                    <div class="portfolio-description">
-                        <h2>Details</h2>
 
+
+                <hr class="rounded" style="border-top: 3px solid;">
+
+                <div class="portfolio-description">
+                    <h2>Details</h2>
+                    <div class="pd-section">
                         <h3>Saturation System</h3>
-                        <p>
-                            This function changes the saturation of the game during the playthrough. The higher procentage that you get, the higher the saturation will get and the more NPCs appear on screen.
-                        </p>
-                        <br>
-                        <h3>Track Creation</h3>
-                        <p>This is the most complex part of the game. Because we had limited time with making the game I decided to allow my designers to use tiled (Level designing software) to create the tracks for the actual game. Every square is perfectly spaced so that it will be 1/8th beat. This is the tiled map parsing code adaptation that I wrote.
-                        </p>
+                        <p>This function changes the saturation of the game during the playthrough. The higher procentage that you get, the higher the saturation will get and the more NPCs appear on screen.</p>
+                    </div>
 
-                        <section id="spotlight" class="spotlights">
-                            <section id="two">
-                                <div style="height: 50vh; overflow:scroll; margin-left: auto;margin-right: auto;">
-                                    <script src="https://gist.github.com/tuhri444/31e8376fdb26e908f09255ff6bca5168.js"></script>
-                                </div>
-                            </section>
-                        </section>
+                    <div class="pd-section">
+                        <h3>Track Creation</h3>
+                        <p>This is the most complex part of the game. Because we had limited time with making the game I decided to allow my designers to use tiled (Level designing software) to create the tracks for the actual game. Every square is perfectly spaced so that it will be 1/8th beat. This is the tiled map parsing code adaptation that I wrote.</p>
                     </div>
                 </div>
 
-            </div>
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-modelviewer.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">Model Viewer</span>
+                    </a>
+                    <a href="portfolio-bbl.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">BBL VR game</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -125,20 +171,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -146,12 +187,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -166,7 +206,6 @@
 
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

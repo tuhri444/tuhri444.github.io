@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Pac-Man 3D</title>
+    <title>Pac-Man 3D — Arjen de Aldrey</title>
+    <meta name="description" content="A 3D Pac-Man built in three weeks for the Looking Glass holographic display, including custom Unity tooling for the maze and movement.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-pacman.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="Pac-Man 3D — Arjen de Aldrey">
+    <meta property="og:description" content="A 3D Pac-Man built in three weeks for the Looking Glass holographic display, including custom Unity tooling for the maze and movement.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-pacman.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/pacman-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pac-Man 3D — Arjen de Aldrey">
+    <meta name="twitter:description" content="A 3D Pac-Man built in three weeks for the Looking Glass holographic display, including custom Unity tooling for the maze and movement.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/pacman-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,98 +39,126 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">Pac-Man 3D</h1>
+                <h1 class="pd-title">Pac-Man 3D</h1>
+                <p class="pd-subtitle">Obviously not trademarked</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">Unity Engine</li>
+                    <li>C#</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Slideshow -->
-                    <div style="float:left" class="col-lg-7">
+                    <!-- Media -->
+                    <div class="col-lg-7">
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
-
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/pacman/pacman.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/pacman/pacman.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/pacman/pacman.jpg" alt="Pac-Man 3D logo in yellow block letters on a dark blue background." width="654" height="416" loading="eager" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/pacman/pacman_gameplay.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/pacman/pacman-gameplay.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/pacman/pacman-gameplay.jpg" alt="Pac-Man 3D gameplay: a blue wireframe maze cube filled with yellow pellets on a black background." width="793" height="550" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/pacman/pacman_scene.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/pacman/pacman-scene.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/pacman/pacman-scene.jpg" alt="Unity scene view showing the maze cube inside a green bounding volume." width="675" height="454" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/pacman/pacman_tool.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/pacman/pacman-tool.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/pacman/pacman-tool.jpg" alt="Unity inspector for the Player Movement and Turn Pipes scripts, exposing destination, speed and turn direction fields." width="273" height="252" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
-
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- Preview info -->
+
+                    <!-- Project information -->
                     <div class="col-lg-5">
                         <div class="portfolio-info">
                             <h3>Project information</h3>
-                            <h4><strong>Description</strong></h4>
-                            <p>This was a 3 week project with the goal of using an innovative 'new' technology.
-                                The technology that right away crossed our minds was the holographic screen called the Looking glass holographic screen.<br />
-                                I teamed up with another programmer to try and tackle this machine. We both needed some interesting project to put on our portfolio, thus we wanted to learn the api provided by the looking glass factory. This was challenging to say the least. It had many bugs and features that we felt lacking. </p>
+                            <p>This was a 3 week project with the goal of using an innovative &#x27;new&#x27; technology. The technology that right away crossed our minds was the holographic screen called the Looking glass holographic screen. I teamed up with another programmer to try and tackle this machine. We both needed some interesting project to put on our portfolio, thus we wanted to learn the api provided by the looking glass factory. This was challenging to say the least. It had many bugs and features that we felt lacking.</p>
                             <ul>
-
-                                <li><strong>Time</strong>: 3 weeks </li>
-                                <li><strong>Team structure</strong>: 2 programmers, 2 designers, 2 artists </li>
-                                <li><strong>Game Engine</strong>: Unity Engine </li>
-                                <li><strong>Language</strong>: C# </li>
-                                <li><strong>Role: </strong>: Gameplay Programmer, Tools Programmer </li>
+                                <li><strong>Time</strong>: 3 weeks</li>
+                                <li><strong>Team structure</strong>: 2 programmers, 2 designers, 2 artists</li>
+                                <li><strong>Game Engine</strong>: Unity Engine</li>
+                                <li><strong>Language</strong>: C#</li>
+                                <li><strong>Role</strong>: : Gameplay Programmer, Tools Programmer</li>
                             </ul>
+
                         </div>
                     </div>
 
+                </div>
 
-                    <!-- Details -->
-                    <hr class="rounded" style="border-top: 3px solid;">
-                    <div class="portfolio-description">
-                        <h2>Details</h2>
+
+
+                <hr class="rounded" style="border-top: 3px solid;">
+
+                <div class="portfolio-description">
+                    <h2>Details</h2>
+                    <div class="pd-section">
                         <h3>Unity Tooling</h3>
-                        <p>
-                            The map as you might think was 3D. This meant that we needed a way of looking around the map. We realized that showing slices of a 3D map might be too complicated for a user to comprehend on a limited screen like the looking glass. Because of this we decided that it would be easier to instead only have the map exist on the outer layer of a cube. Meaning we would have 6 times a 2D map instead of a complex 3D labyrinth.<br /><br />
-                            This didn't come without its struggles. After a round of user testing we found out that it was harder than we thought to take into account 6 sides even when simplying the sides to a simple cross pattern. Thus we lowered the side count to only being able to rotate the map horizontally, meaning just 4 sides. This seemed to be the sweet spot. During this process the debugging info shown in the inspector helped a lot and simple serialized parameters helped the designers adjust what was necessary.
-                            <br /><br />
-                            Lastly I made a map editor using unity editor code to make it easier for our designers to design new maps and test the best setups. The code can be found at the bottom of the page.
-                        </p>
-                        <br>
-                        <h3>Looking Glass API</h3>
-                        <p>
-                            Oh boy, the Looking Glass API. Coming into this I was prepared for a challenge and it was. Of course I enjoyed learning this new piece of software but it was a struggle to say the least. Because the screen is 3D and holographic, you need to take into account that it has a focus point and you can only view objects from a specific angle. Meaning the 3D aspect of it is very much limited. Because of these two limitations you can only have a very small playing map if you want it at a resolution where you can see what it happening in the game.
-                            <br />
-                            Last but not least, at the time of using the API, there was absolutely no reference documation available.
-                        </p>
+                        <p>The map as you might think was 3D. This meant that we needed a way of looking around the map. We realized that showing slices of a 3D map might be too complicated for a user to comprehend on a limited screen like the looking glass. Because of this we decided that it would be easier to instead only have the map exist on the outer layer of a cube. Meaning we would have 6 times a 2D map instead of a complex 3D labyrinth. This didn&#x27;t come without its struggles. After a round of user testing we found out that it was harder than we thought to take into account 6 sides even when simplying the sides to a simple cross pattern. Thus we lowered the side count to only being able to rotate the map horizontally, meaning just 4 sides. This seemed to be the sweet spot. During this process the debugging info shown in the inspector helped a lot and simple serialized parameters helped the designers adjust what was necessary. Lastly I made a map editor using unity editor code to make it easier for our designers to design new maps and test the best setups. The code can be found at the bottom of the page.</p>
+                    </div>
 
-                        <section id="spotlight" class="spotlights">
-                            <section id="two">
-                                <div style="height: 50vh; overflow:scroll; margin-left: auto;margin-right: auto;">
-                                    <script src="https://gist.github.com/tuhri444/710f41b50bca0223f0d1bf7c2ff49155.js"></script>
-                                </div>
-                            </section>
-                        </section>
+                    <div class="pd-section">
+                        <h3>Looking Glass API</h3>
+                        <p>Oh boy, the Looking Glass API. Coming into this I was prepared for a challenge and it was. Of course I enjoyed learning this new piece of software but it was a struggle to say the least. Because the screen is 3D and holographic, you need to take into account that it has a focus point and you can only view objects from a specific angle. Meaning the 3D aspect of it is very much limited. Because of these two limitations you can only have a very small playing map if you want it at a resolution where you can see what it happening in the game. Last but not least, at the time of using the API, there was absolutely no reference documation available.</p>
                     </div>
                 </div>
 
-            </div>
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-wastingspace.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">Wasting Space</span>
+                    </a>
+                    <a href="portfolio-modelviewer.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">Model Viewer</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -126,20 +171,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -147,12 +187,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -167,7 +206,6 @@
 
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

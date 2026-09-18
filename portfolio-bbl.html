@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>[Portfolio Item Name]</title>
+    <title>BBL VR game — Arjen de Aldrey</title>
+    <meta name="description" content="A two-player VR truck parking and forklift loading game built in Unity for BBL, using Photon multiplayer and tetris-shaped pallets on a placement grid.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-bbl.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="BBL VR game — Arjen de Aldrey">
+    <meta property="og:description" content="A two-player VR truck parking and forklift loading game built in Unity for BBL, using Photon multiplayer and tetris-shaped pallets on a placement grid.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-bbl.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/bbl-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BBL VR game — Arjen de Aldrey">
+    <meta name="twitter:description" content="A two-player VR truck parking and forklift loading game built in Unity for BBL, using Photon multiplayer and tetris-shaped pallets on a placement grid.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/bbl-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,99 +39,129 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">BBL VR game</h1>
+                <h1 class="pd-title">BBL VR game</h1>
+                <p class="pd-subtitle">Multiplayer Truck Driving Simulator</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">Unity</li>
+                    <li>Photon</li>
+                    <li>Meta SDK</li>
+                    <li>C#</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Slideshow -->
-                    <div style="float:left" class="col-lg-7">
+                    <!-- Media -->
+                    <div class="col-lg-7">
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
-
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/bbl/magazijne.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/bbl/magazijne.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/bbl/magazijne.jpg" alt="Warehouse interior seen in VR, with tall storage racks and pallets along the aisles." width="1600" height="900" loading="eager" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/bbl/inladen.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/bbl/inladen.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/bbl/inladen.jpg" alt="VR view of the truck loading dock, with a forklift and stacked crates." width="1600" height="900" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/bbl/truckandscooter.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/bbl/truckandscooter.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/bbl/truckandscooter.jpg" alt="Street scene with a red delivery scooter rider stopped beside a green and white truck." width="1600" height="900" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/bbl/collage.jpg" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/bbl/collage.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/bbl/collage.jpg" alt="Collage of visitors playing the game in VR headsets at an event, alongside renders of the truck and warehouse." width="1600" height="1280" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
-
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- Preview info -->
+
+                    <!-- Project information -->
                     <div class="col-lg-5">
                         <div class="portfolio-info">
                             <h3>Project information</h3>
-                            <h4><strong>Description</strong></h4>
-                            <p>Our client BBL wanted a product that they could take to tradeshows and schools to entice young adults to look into the transport sector for potential future employment.
-                                To make this as fun as possible, we made a game that pits 2 players against each other to try and park a truck in the shortest amount of time, without hitting walls
-                                or pedestrians. The second part of the game is loading in a truck with a forklift. The key is to fit in as many tetris-shaped pallets into the truck as possible within 
-                                the time limit.
-                            </p>
+                            <p>Our client BBL wanted a product that they could take to tradeshows and schools to entice young adults to look into the transport sector for potential future employment. To make this as fun as possible, we made a game that pits 2 players against each other to try and park a truck in the shortest amount of time, without hitting walls or pedestrians. The second part of the game is loading in a truck with a forklift. The key is to fit in as many tetris-shaped pallets into the truck as possible within the time limit.</p>
                             <ul>
-
-                                <li><strong>Time</strong>: 8 weeks </li>
-                                <li><strong>Team structure</strong>: 1 programmer, 2 artists </li>
-                                <li><strong>Game Engine</strong>: Unity </li>
-                                <li><strong>Prominent Plugins</strong>: Photon, Meta SDK </li>
-                                <li><strong>Language</strong>: C# </li>
-                                <li><strong>Roles</strong>: Lead Developer </li>
+                                <li><strong>Time</strong>: 8 weeks</li>
+                                <li><strong>Team structure</strong>: 1 programmer, 2 artists</li>
+                                <li><strong>Game Engine</strong>: Unity</li>
+                                <li><strong>Prominent Plugins</strong>: Photon, Meta SDK</li>
+                                <li><strong>Language</strong>: C#</li>
+                                <li><strong>Roles</strong>: Lead Developer</li>
                             </ul>
+
                         </div>
                     </div>
 
+                </div>
 
-                    <!-- Details -->
-                    <hr class="rounded" style="border-top: 3px solid;">
-                    <div class="portfolio-description">
-                        <h2>Details</h2>
 
-                        <h3>Testing and Iterating </h3>
-                        <p>
-                            User experience is one of the most important factors when making a VR game meant to entice people. If they are turned down by the experience, it is hard to convince them of anything else
-                            besides the awful experience. One key example was the driving of the forklift. It worked exactly like a forklift in the movement category, but the suspension of
-                            the forklift was so high you had lots of bobbing of the vehicle. This caused around 50% of the users to get quite nauseous (which was found out after a round of testing)
-                            and was thus swiftly adjusted by making the player's head move along with a target object on the forklift, instead of being a child of the forklift.
-                        </p>
-                        <br>
 
-                        <h3>Placement system </h3>
-                        <p>
-                            The backside of the truck would be divided into grid blocks. Every pallet you would try to load in (just like a tetris shape) is also made out of grid blocks.
-                            The key to this system is to take the self-described center block of the shape and describe the relation from that block to the next block using a custom data type.
-                            Then when trying to place it first check the placement grid position you're on now with the center block. If it is unoccupied, it goes to check the positions for
-                            each neighbor of the center blocks, etc etc, until it has checked all necessary placement grid positions. By adding an orientation to the main shape data class, I was
-                            able to simply adjust the rotation of the entire shape and it's placement checking function.
-                        </p>
-                        <br>
+                <hr class="rounded" style="border-top: 3px solid;">
 
+                <div class="portfolio-description">
+                    <h2>Details</h2>
+                    <div class="pd-section">
+                        <h3>Testing and Iterating</h3>
+                        <p>User experience is one of the most important factors when making a VR game meant to entice people. If they are turned down by the experience, it is hard to convince them of anything else besides the awful experience. One key example was the driving of the forklift. It worked exactly like a forklift in the movement category, but the suspension of the forklift was so high you had lots of bobbing of the vehicle. This caused around 50% of the users to get quite nauseous (which was found out after a round of testing) and was thus swiftly adjusted by making the player&#x27;s head move along with a target object on the forklift, instead of being a child of the forklift.</p>
+                    </div>
+
+                    <div class="pd-section">
+                        <h3>Placement system</h3>
+                        <p>The backside of the truck would be divided into grid blocks. Every pallet you would try to load in (just like a tetris shape) is also made out of grid blocks. The key to this system is to take the self-described center block of the shape and describe the relation from that block to the next block using a custom data type. Then when trying to place it first check the placement grid position you&#x27;re on now with the center block. If it is unoccupied, it goes to check the positions for each neighbor of the center blocks, etc etc, until it has checked all necessary placement grid positions. By adding an orientation to the main shape data class, I was able to simply adjust the rotation of the entire shape and it&#x27;s placement checking function.</p>
                     </div>
                 </div>
 
-            </div>
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-discoking.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">Disco King</span>
+                    </a>
+                    <a href="portfolio-vrspellcasting.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">VR Spellcasting</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -127,20 +174,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -148,12 +190,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -168,7 +209,6 @@
 
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

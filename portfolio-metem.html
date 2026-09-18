@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Met'em Park</title>
+    <title>Met&#x27;em Park — Arjen de Aldrey</title>
+    <meta name="description" content="A social meeting platform built for Abstraction Games, covering networking research, system structure and blueprint work in a new engine.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-metem.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="Met&#x27;em Park — Arjen de Aldrey">
+    <meta property="og:description" content="A social meeting platform built for Abstraction Games, covering networking research, system structure and blueprint work in a new engine.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-metem.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/metem-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Met&#x27;em Park — Arjen de Aldrey">
+    <meta name="twitter:description" content="A social meeting platform built for Abstraction Games, covering networking research, system structure and blueprint work in a new engine.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/metem-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,106 +39,132 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">Met'em Park</h1>
+                <h1 class="pd-title">Met&#x27;em Park</h1>
+                <p class="pd-subtitle">Project made for Abstraction Games</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">Unreal Engine 4</li>
+                    <li>C++</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Slideshow -->
-                    <div style="float:left" class="col-lg-7">
+                    <!-- Media -->
+                    <div class="col-lg-7">
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
-
-                                <div class="swiper-slide" style="text-align: center;">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3cVLMJ-o0O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="swiper-slide">
+                                    <div class="pd-slide-embed" style="--pd-embed-aspect: 16 / 9">
+                                        <iframe src="https://www.youtube.com/embed/3cVLMJ-o0O4" title="Met&#x27;em Park trailer" loading="lazy"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+                                    </div>
+                                    <p class="pd-caption">Met&#x27;em Park trailer</p>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/metem/Networking%20research.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/metem/networking-research.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/metem/networking-research.jpg" alt="Comparison matrix of networking solutions, colour coded red, amber and green, with details redacted." width="1600" height="467" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/metem/Structure.png" alt="">
-                                </div>
-                                
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/metem/blueprint.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/metem/structure.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/metem/structure.jpg" alt="System architecture diagram showing how the project&#x27;s systems connect, with details redacted." width="1192" height="658" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/metem/blueprint.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/metem/blueprint.jpg" alt="Unreal blueprint graph with nodes and coloured connection lines spanning the canvas." width="1055" height="579" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- Preview info -->
+
+                    <!-- Project information -->
                     <div class="col-lg-5">
                         <div class="portfolio-info">
                             <h3>Project information</h3>
-                            <h4><strong>Description</strong></h4>
-                            <p>During my 4th year of University, I got the opportunity to create a 'social meeting platform' for Abstraction Games. The goal was to create something they could use to hold after-work meet-ups.
-                                <br>
-                                <br>
-                                This project plays a big part in my development towards a better learning process. It took me completely out of my comfort zone and forced me to learn to work with a new Game Engine in a short period while simultaneously producing a product that could be further developed by Abstraction Games.
-                            </p>
+                            <p>During my 4th year of University, I got the opportunity to create a &#x27;social meeting platform&#x27; for Abstraction Games. The goal was to create something they could use to hold after-work meet-ups. This project plays a big part in my development towards a better learning process. It took me completely out of my comfort zone and forced me to learn to work with a new Game Engine in a short period while simultaneously producing a product that could be further developed by Abstraction Games.</p>
                             <ul>
-                                <li><strong>Time</strong>: 20 weeks </li>
+                                <li><strong>Time</strong>: 20 weeks</li>
                                 <li><strong>Team structure</strong>: 2 designer, 2 engineers, 3 artists</li>
-                                <li><strong>Game Engine</strong>: Unreal Engine 4 </li>
-                                <li><strong>Language</strong>: C++ </li>
+                                <li><strong>Game Engine</strong>: Unreal Engine 4</li>
+                                <li><strong>Language</strong>: C++</li>
                                 <li><strong>Roles</strong>: Systems programmer, Networking programmer</li>
                             </ul>
-                            <p>
-                            <strong>Extra</strong>: The details gloss more over my experience and thought processes as I am unable to talk about the specifics of the project. 
-                            </p>
+
                         </div>
                     </div>
 
+                </div>
 
-                    <!-- Details -->
-                    <hr class="rounded" style="border-top: 3px solid;">
-                    <div class="portfolio-description">
-                        <h2>Details</h2>
 
+
+                <hr class="rounded" style="border-top: 3px solid;">
+
+                <div class="portfolio-description">
+                    <h2>Details</h2>
+                    <div class="pd-section">
                         <h3>The endless struggle for a networking solution</h3>
-                        <p>
-                            During the research phase of the project, it was my responsibility to research and select the networking solutions that will be used for the general gameplay feature networking', video transfer networking, and sound transfer networking. Due to the lack of scope for a single person, not all solutions could be tested in full and thus the selection had to be based on the given feature lists of each of the solutions that I was able to find for this project. 
-                            <br>
-                            <br>
-                            The choice was made to use a mix of solutions namely Photon,  for the general game networking; Agora, for the video transfer networking; Vivox for audio transfer networking. The problem with multiple solutions is that they each have their differences in implementation time and are usually not plug-and-play. This forced us to focus on the video and gameplay solutions while still keeping the audio solution in mind in the structure design process.
-                        </p>
-                        <br>
+                        <p>During the research phase of the project, it was my responsibility to research and select the networking solutions that will be used for the general gameplay feature networking&#x27;, video transfer networking, and sound transfer networking. Due to the lack of scope for a single person, not all solutions could be tested in full and thus the selection had to be based on the given feature lists of each of the solutions that I was able to find for this project. The choice was made to use a mix of solutions namely Photon, for the general game networking; Agora, for the video transfer networking; Vivox for audio transfer networking. The problem with multiple solutions is that they each have their differences in implementation time and are usually not plug-and-play. This forced us to focus on the video and gameplay solutions while still keeping the audio solution in mind in the structure design process.</p>
+                    </div>
 
+                    <div class="pd-section">
                         <h3>Structured Systems</h3>
-                        <p>
-                            Due to the complexity of the project a set structure had to be created before any implementation would be able to take place. One of the key parts of the structure was the inclusion of the <a href="https://refactoring.guru/design-patterns/adapter/csharp/example">adapter pattern</a>. The idea behind this decision was to embrace adaptability as one of the core design pillars for the system. It gave Abstraction Games the ability to swap out the networking solutions to what they see fit.
-                        </p>
-                        <br>
-                        
+                        <p>Due to the complexity of the project a set structure had to be created before any implementation would be able to take place. One of the key parts of the structure was the inclusion of the adapter pattern . The idea behind this decision was to embrace adaptability as one of the core design pillars for the system. It gave Abstraction Games the ability to swap out the networking solutions to what they see fit.</p>
+                    </div>
+
+                    <div class="pd-section">
                         <h3>Blueprints</h3>
-                        <p>
-                            The part that I enjoyed the most was the creation of systems that exposed themselves as blueprints intended for use by the gameplay programmer. Various features were created that allowed data to be sent as packets toward the server host and then spread to the connected users. It allowed game modes, and various gameplay features to communicate and update the other users on events that are happening.
-                            <br>
-                            <br>
-                            Creating these tools and then seeing the puzzle pieces be put together to create new emergent functionality is a wonderful feeling and is one that I seek out when learning new topics.
-                        </p>
-                        <br>
-
-
+                        <p>The part that I enjoyed the most was the creation of systems that exposed themselves as blueprints intended for use by the gameplay programmer. Various features were created that allowed data to be sent as packets toward the server host and then spread to the connected users. It allowed game modes, and various gameplay features to communicate and update the other users on events that are happening. Creating these tools and then seeing the puzzle pieces be put together to create new emergent functionality is a wonderful feeling and is one that I seek out when learning new topics.</p>
                     </div>
                 </div>
 
-            </div>
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-vrspellcasting.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">VR Spellcasting</span>
+                    </a>
+                    <a href="portfolio-wastingspace.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">Wasting Space</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -134,20 +177,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -155,12 +193,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -176,8 +213,9 @@
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
 
-
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-</body></html>
+</body>
+
+</html>

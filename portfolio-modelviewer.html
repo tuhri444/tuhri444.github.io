@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>[Portfolio Item Name]</title>
+    <title>Model Viewer — Arjen de Aldrey</title>
+    <meta name="description" content="A small Unity WebGL tool I built to display my own 3D art pieces, embedded and playable directly in the browser.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-modelviewer.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="Model Viewer — Arjen de Aldrey">
+    <meta property="og:description" content="A small Unity WebGL tool I built to display my own 3D art pieces, embedded and playable directly in the browser.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-modelviewer.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/modelviewer-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Model Viewer — Arjen de Aldrey">
+    <meta name="twitter:description" content="A small Unity WebGL tool I built to display my own 3D art pieces, embedded and playable directly in the browser.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/modelviewer-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,53 +39,83 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">Model Viewer</h1>
+                <h1 class="pd-title">Model Viewer</h1>
+                <p class="pd-subtitle">Display case for all my 3D art pieces</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">Unity</li>
+                    <li>WebGL</li>
+                    <li>3D Art</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Preview info -->
-                    <div class="col-lg-13">
+                    <!-- Playable embed -->
+                    <div class="col-12">
+                        <div class="pd-embed" style="--pd-embed-aspect: 16 / 10">
+                            <iframe src="https://i.simmer.io/@StereoJunkie/model-display" title="Model Viewer playable build"
+                                allow="fullscreen; autoplay; gamepad"></iframe>
+                        </div>
+                        <p class="pd-caption">Playable build - use the left stick to orbit and the right stick to switch models.</p>
+                    </div>
+
+                    <!-- Project information -->
+                    <div class="col-12">
                         <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <p>Throughout my game development career, I have and will continue to stumbled upon opportunities that allow me to learn something new. Including learning how to make 3D art work. This is a little tool I created to display them. This tool is quite lacking compared to other 3D model viewers that are readily available on the internet. The reason for creating it is simply because it is more fun to try and create my own tool.</p>
+                            <ul>
 
-                            <!-- model display -->
-                            <div class="inner" style="width: 100%; text-align: center;">
-                                <header class="major">
-                                    <div class="skill" style="width: 100%;">
-                                        <iframe src="https://i.simmer.io/@StereoJunkie/model-display" style="width:960px;height:600px"></iframe>
-                                    </div>
-                                </header>
-                            </div>
-                            <!-- model display-->
+                            </ul>
 
-                            <br><br>
-                            <div class="col-lg-5">
-                                <h4><strong>Description</strong></h4>
-                                <p>Throughout my game development career, I have and will continue to stumbled upon opportunities that allow me to learn something new. Including learning how to make 3D art work. This is a little tool I created to display them.
-                                    <br>
-                                    <br>
-                                This tool is quite lacking compared to other 3D model viewers that are readily available on the internet. The reason for creating it is simply because it is more fun to try and create my own tool. 
-                                </p>
-                            </div>
                         </div>
                     </div>
-                    <hr class="rounded" style="border-top: 3px solid;">
 
                 </div>
 
-            </div>
+
+
+
+
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-pacman.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">Pac-Man 3D</span>
+                    </a>
+                    <a href="portfolio-discoking.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">Disco King</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -81,20 +128,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -102,12 +144,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -122,7 +163,6 @@
 
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

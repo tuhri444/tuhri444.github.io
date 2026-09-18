@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Wasting Space</title>
+    <title>Wasting Space — Arjen de Aldrey</title>
+    <meta name="description" content="A ten-week Unity game for the Oyfo technology museum about space debris, with a custom game-area editor and a multi-scheme input system.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-wastingspace.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="Wasting Space — Arjen de Aldrey">
+    <meta property="og:description" content="A ten-week Unity game for the Oyfo technology museum about space debris, with a custom game-area editor and a multi-scheme input system.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-wastingspace.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/wastingspace-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wasting Space — Arjen de Aldrey">
+    <meta name="twitter:description" content="A ten-week Unity game for the Oyfo technology museum about space debris, with a custom game-area editor and a multi-scheme input system.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/wastingspace-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,100 +39,119 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">Wasting Space</h1>
+                <h1 class="pd-title">Wasting Space</h1>
+                <p class="pd-subtitle">Museum project</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">Unity Engine</li>
+                    <li>C#</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Slideshow -->
-                    <div style="float:left" class="col-lg-7">
+                    <!-- Media -->
+                    <div class="col-lg-7">
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
-
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/WastingSpace/wastingspace.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/wastingspace/wastingspace.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/wastingspace/wastingspace.jpg" alt="Wasting Space title screen: an astronaut holding a net beside Earth, with a Start button and Dutch and English language flags." width="1600" height="900" loading="eager" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/WastingSpace/EditorToolWastingSpace.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/wastingspace/editortoolwastingspace.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/wastingspace/editortoolwastingspace.jpg" alt="Unity inspector for the Game Manager script, with buttons to create and remove spawn areas and meteor event slots." width="284" height="265" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/WastingSpace/InputSystemWastingSpace.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/wastingspace/inputsystemwastingspace.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/wastingspace/inputsystemwastingspace.jpg" alt="Unity inspector for the Ship Movement script, with toggles for joystick, tank and drag control schemes." width="262" height="149" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
-
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- Preview info -->
+
+                    <!-- Project information -->
                     <div class="col-lg-5">
                         <div class="portfolio-info">
                             <h3>Project information</h3>
-                            <h4><strong>Description</strong></h4>
-                            <p>A whole 10 weeks of development that went into making a game for the Oyfo museum of technology. <br />
-                                Our goal was to raise awareness to the trash we leave behind in space. It was a very big learning opportunity for all of us. <br />
-                                With a large amount of time spent on research and learning new programming techniques, this was probably the project I learned the most from. <br />
-                                Not just programmer techniques but also team building skills. <br /><br />
-                                All in all, I learned that communication is key.
-                            </p>
+                            <p>A whole 10 weeks of development that went into making a game for the Oyfo museum of technology. Our goal was to raise awareness to the trash we leave behind in space. It was a very big learning opportunity for all of us. With a large amount of time spent on research and learning new programming techniques, this was probably the project I learned the most from. Not just programmer techniques but also team building skills. All in all, I learned that communication is key.</p>
                             <ul>
-
-                                <li><strong>Time</strong>: 10 weeks </li>
-                                <li><strong>Team structure</strong>: 2 programmer, 3 designers, 4 artistss </li>
-                                <li><strong>Game Engine</strong>: Unity Engine </li>
-                                <li><strong>Language</strong>: C# </li>
-                                <li><strong>Roles</strong>: Gameplay programmer, Tools programmer </li>
+                                <li><strong>Time</strong>: 10 weeks</li>
+                                <li><strong>Team structure</strong>: 2 programmer, 3 designers, 4 artistss</li>
+                                <li><strong>Game Engine</strong>: Unity Engine</li>
+                                <li><strong>Language</strong>: C#</li>
+                                <li><strong>Roles</strong>: Gameplay programmer, Tools programmer</li>
                             </ul>
+
                         </div>
                     </div>
 
+                </div>
 
-                    <!-- Details -->
-                    <hr class="rounded" style="border-top: 3px solid;">
-                    <div class="portfolio-description">
-                        <h2>Details</h2>
 
+
+                <hr class="rounded" style="border-top: 3px solid;">
+
+                <div class="portfolio-description">
+                    <h2>Details</h2>
+                    <div class="pd-section">
                         <h3>Game Area Editor Tooling</h3>
-                        <p>
-                            One of the first features that I started to work on was the Unity editor tool that allowed the game designers to customize the spawning areas inside the game. It allowed for custom editor GUI to be shown, depicting what the spawn area looked like. This includes its size and a color code. The Spawn areas themselves allowed for the customization of amount of things to spawn, the ratio of what to spawn, scale modifiers and velocity to add to the spawned areas.
-                        </p>
-                        <br>
+                        <p>One of the first features that I started to work on was the Unity editor tool that allowed the game designers to customize the spawning areas inside the game. It allowed for custom editor GUI to be shown, depicting what the spawn area looked like. This includes its size and a color code. The Spawn areas themselves allowed for the customization of amount of things to spawn, the ratio of what to spawn, scale modifiers and velocity to add to the spawned areas.</p>
+                    </div>
 
+                    <div class="pd-section">
                         <h3>Input systems</h3>
-                        <p>
-                            Because this project was meant for a big touchscreen type of device, we had to figure out what type of movement to use inside of our game. That is why a multitude of input systems were developed and tested numerous times.
-                        </p>
-
-                        <section id="spotlight" class="spotlights">
-                            <section id="two" style="text-align: center">
-                                <div class="content" style="margin: auto;">
-                                    <div class="inner">
-                                        <a href="#three" class="image">
-                                            <a href="https://github.com/tuhri444/Wasting-Space">
-                                                <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tuhri444&repo=Wasting-Space&theme=prussian&show_icons=true" />
-                                            </a>
-                                        </a>
-                                    </div>
-                                </div>
-                            </section>
-                        </section>
+                        <p>Because this project was meant for a big touchscreen type of device, we had to figure out what type of movement to use inside of our game. That is why a multitude of input systems were developed and tested numerous times.</p>
                     </div>
                 </div>
 
-            </div>
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-metem.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">Met&amp;#x27;em Park</span>
+                    </a>
+                    <a href="portfolio-pacman.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">Pac-Man 3D</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -128,20 +164,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -149,12 +180,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -169,7 +199,6 @@
 
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

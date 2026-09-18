@@ -5,14 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>VR Spellcasting</title>
+    <title>VR Spellcasting — Arjen de Aldrey</title>
+    <meta name="description" content="A Unity VR minigame that recognises hand-drawn spell symbols with a Barracuda machine learning model, plus the tooling to train it.">
+    <meta name="author" content="Arjen de Aldrey">
+    <link rel="canonical" href="https://www.arjendealdrey.com/portfolio-vrspellcasting.html">
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjen de Aldrey">
+    <meta property="og:title" content="VR Spellcasting — Arjen de Aldrey">
+    <meta property="og:description" content="A Unity VR minigame that recognises hand-drawn spell symbols with a Barracuda machine learning model, plus the tooling to train it.">
+    <meta property="og:url" content="https://www.arjendealdrey.com/portfolio-vrspellcasting.html">
+    <meta property="og:image" content="https://www.arjendealdrey.com/assets/img/portfolio/vrspellcasting-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VR Spellcasting — Arjen de Aldrey">
+    <meta name="twitter:description" content="A Unity VR minigame that recognises hand-drawn spell symbols with a Barracuda machine learning model, plus the tooling to train it.">
+    <meta name="twitter:image" content="https://www.arjendealdrey.com/assets/img/portfolio/vrspellcasting-preview.jpg">
 
     <!-- Favicons -->
     <link href="assets/img/pog-favicon.png" rel="icon">
     <link href="assets/img/pog-favicon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -22,117 +39,140 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS Files -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio-entry.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+    <!-- ======= Top bar ======= -->
+    <div class="pd-topbar">
+        <div class="container">
+            <a href="index.html#portfolio" class="pd-back"><i class="bx bx-left-arrow-alt"></i> Back to portfolio</a>
+            <span class="pd-topbar-name">Arjen de Aldrey</span>
+            <span class="pd-topbar-links">
+                <a href="https://www.linkedin.com/in/arjendealdrey/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            </span>
+        </div>
+    </div>
 
     <main id="main-portfolio">
 
         <section id="portfolio-details" class="portfolio-details">
             <div class="container">
 
-                <h1 style="text-align: center">VR Spellcasting</h1>
+                <h1 class="pd-title">VR Spellcasting</h1>
+                <p class="pd-subtitle">Unity Machine Learning</p>
+
+                <ul class="pd-pills">
+                    <li class="pd-pill-accent">Unity Engine</li>
+                    <li>PyCharm</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ul>
+
                 <hr class="rounded" style="border-top: 3px solid;">
 
                 <div class="row gy-4">
 
-                    <!-- Slideshow -->
-                    <div style="float:left" class="col-lg-7">
+                    <!-- Media -->
+                    <div class="col-lg-7">
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/vrspellcasting/mlvrspellpreview.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/vrspellcasting/mlvrspellpreview.jpg" alt="A glowing golden rune circle drawn in mid-air in VR, with on-screen instructions for drawing spells." width="1600" height="901" loading="eager" decoding="async">
+                                    </picture>
+                                </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/vrspellcasting/mlvrspellpreview.png" alt="">
-                                </div>
-                                
-                                <div class="swiper-slide">
-                                    <video width="100%" height="100%" controls>
-                                        <source src="assets/img/portfolio/details/vrspellcasting/AI%20spellcasting.mp4" type="video/mp4">
+                                    <video controls preload="metadata" poster="assets/img/portfolio/details/vrspellcasting/ai-spellcasting-poster.jpg" width="100%">
+                                        <source src="assets/img/portfolio/details/vrspellcasting/ai-spellcasting.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/vrspellcasting/mlvrcastingsystem.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/vrspellcasting/mlvrcastingsystem.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/vrspellcasting/mlvrcastingsystem.jpg" alt="Unity inspector for the Casting System script, mapping left and right XR controllers to drawing input methods." width="399" height="223" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/vrspellcasting/mlvrrasterize.png" alt="">
-                                </div>
-                                
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/details/vrspellcasting/mlvrcode.png" alt="">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/vrspellcasting/mlvrrasterize.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/vrspellcasting/mlvrrasterize.jpg" alt="Unity inspector for the Rasterize Image script, with a render target and the folder name for custom training images." width="410" height="108" loading="lazy" decoding="async">
+                                    </picture>
                                 </div>
 
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="assets/img/portfolio/details/vrspellcasting/mlvrcode.webp" type="image/webp">
+                                        <img src="assets/img/portfolio/details/vrspellcasting/mlvrcode.jpg" alt="C# source for the image analysis step that feeds the gesture recognition model." width="926" height="665" loading="lazy" decoding="async">
+                                    </picture>
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- Preview info -->
+
+                    <!-- Project information -->
                     <div class="col-lg-5">
                         <div class="portfolio-info">
                             <h3>Project information</h3>
-                            <h4><strong>Description</strong></h4>
-                            <p> I've always wanted to work with both VR and AI so I decided to combine them. With this project I present to you a minigame that teaches you how to use the VR environment to cast spells. The point of the project was not for spell casting itself. It was meant for using a gesture recognition machine learning algorithm to power all kinds of mechanisms inside of games. By tweaking parameters and adding your own scripts, it can be adapted to work with any game. It comes with a way of creating your own dataset with drawings and a side program that trains a model and then converts it to a model that works with the unity ML api.
-                                <br>
-                                <br>
-                                Additionally I'd like to mention that for this project I used the Unity XR toolkit. Not the best api to use but it's unity's attempt to making a universally working VR api and that it does succeed at.
-                            </p>
+                            <p>I&#x27;ve always wanted to work with both VR and AI so I decided to combine them. With this project I present to you a minigame that teaches you how to use the VR environment to cast spells. The point of the project was not for spell casting itself. It was meant for using a gesture recognition machine learning algorithm to power all kinds of mechanisms inside of games. By tweaking parameters and adding your own scripts, it can be adapted to work with any game. It comes with a way of creating your own dataset with drawings and a side program that trains a model and then converts it to a model that works with the unity ML api. Additionally I&#x27;d like to mention that for this project I used the Unity XR toolkit. Not the best api to use but it&#x27;s unity&#x27;s attempt to making a universally working VR api and that it does succeed at.</p>
                             <ul>
-
-                                <li><strong>Time</strong>: 10 weeks </li>
-                                <li><strong>Team structure</strong>: 1 programmer </li>
-                                <li><strong>Platform</strong>: Unity Engine, PyCharm </li>
-                                <li><strong>Language</strong>: C#, Python </li>
-                                <li><strong>Roles</strong>: AI programmer, VR Programmer </li>
+                                <li><strong>Time</strong>: 10 weeks</li>
+                                <li><strong>Team structure</strong>: 1 programmer</li>
+                                <li><strong>Platform</strong>: Unity Engine, PyCharm</li>
+                                <li><strong>Language</strong>: C#, Python</li>
+                                <li><strong>Roles</strong>: AI programmer, VR Programmer</li>
                             </ul>
+
                         </div>
                     </div>
 
+                </div>
 
-                    <!-- Details -->
-                    <hr class="rounded" style="border-top: 3px solid;">
-                    <div class="portfolio-description">
-                        <h2>Details</h2>
 
+
+                <hr class="rounded" style="border-top: 3px solid;">
+
+                <div class="portfolio-description">
+                    <h2>Details</h2>
+                    <div class="pd-section">
                         <h3>Casting System Tool</h3>
-                        <p>
-                            The casting system is the first thing I worked on. This is the system that allows you to draw shapes in the air. This was made completely modular to both account for single stroke drawing and multi stroke drawing, the smoothness of the lines, which controller to use and which button to use.
-                        </p>
-                        <br>
+                        <p>The casting system is the first thing I worked on. This is the system that allows you to draw shapes in the air. This was made completely modular to both account for single stroke drawing and multi stroke drawing, the smoothness of the lines, which controller to use and which button to use.</p>
+                    </div>
 
+                    <div class="pd-section">
                         <h3>Symbol Rasterizing</h3>
-                        <p>
-                            To be able to feed the AI a symbol, I needed a way of capturing this symbol onto a 2D plane. To do this I decided to add another camera slightly behind the player that only renders the layer that the symbol is drawn on. This then gets rendered onto a render target and lastly converted onto a texture2D. One problem I had during this process is that I wanted my camera to capture everything using orthographic projection. This unfortunately was not possible due to the fact that the XR Toolkit package has a script that converts all cameras in the scene to perspective projection and sets it to a certain FOV at all times. Due to this the camera is a little bit less accurate with recording the drawing. (will be fixed in future versions)
-                        </p>
-                        <br>
+                        <p>To be able to feed the AI a symbol, I needed a way of capturing this symbol onto a 2D plane. To do this I decided to add another camera slightly behind the player that only renders the layer that the symbol is drawn on. This then gets rendered onto a render target and lastly converted onto a texture2D. One problem I had during this process is that I wanted my camera to capture everything using orthographic projection. This unfortunately was not possible due to the fact that the XR Toolkit package has a script that converts all cameras in the scene to perspective projection and sets it to a certain FOV at all times. Due to this the camera is a little bit less accurate with recording the drawing. (will be fixed in future versions)</p>
+                    </div>
 
+                    <div class="pd-section">
                         <h3>Barracuda AI model loader</h3>
-                        <p>
-                            To load in the AI model we use the Barracuda package that is include with the MLAgents api. It takes in a texture2D and converts it to a tensor. Which is what a model takes as input. Afterwards we get an array of predictions which are numbers from 0 to 1. It then compares them to find the highest valued prediction and checks if it has a higher value than 0.85. This we do to check if any of the values are accurate enough and if so then invoke the callback function that allows for anyone to add their own scripts to this one.
-                        </p>
-
-                        <section id="spotlight" class="spotlights">
-                            <section id="two" style="text-align: center">
-                                <div class="content" style="margin: auto;">
-                                    <div class="inner">
-                                        <a href="#three" class="image">
-                                            <a href="https://github.com/tuhri444/MLVR">
-                                                <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=tuhri444&repo=MLVR&theme=prussian&show_icons=true" />
-                                            </a>
-                                        </a>
-                                    </div>
-                                </div>
-                            </section>
-                        </section>
-
+                        <p>To load in the AI model we use the Barracuda package that is include with the MLAgents api. It takes in a texture2D and converts it to a tensor. Which is what a model takes as input. Afterwards we get an array of predictions which are numbers from 0 to 1. It then compares them to find the highest valued prediction and checks if it has a higher value than 0.85. This we do to check if any of the values are accurate enough and if so then invoke the callback function that allows for anyone to add their own scripts to this one.</p>
                     </div>
                 </div>
 
-            </div>
+<!-- PD_PAGINATION_START -->
+                <nav class="pd-pagination" aria-label="Project navigation">
+                    <a href="portfolio-bbl.html" class="pd-prev">
+                        <span class="pd-pagination-label">Previous project</span>
+                        <span class="pd-pagination-title">BBL VR game</span>
+                    </a>
+                    <a href="portfolio-metem.html" class="pd-next">
+                        <span class="pd-pagination-label">Next project</span>
+                        <span class="pd-pagination-title">Met&amp;#x27;em Park</span>
+                    </a>
+                </nav>
+                <!-- PD_PAGINATION_END -->
 
             </div>
         </section><!-- End Portfolio Details Section -->
@@ -145,20 +185,15 @@
             <h3>Arjen de Aldrey</h3>
             <p>Game developer by trade, game developer by heart.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/tuhri444" class="github"><i class="bx bxl-github"></i></a>
-                <button onclick="copyDiscordToClipboard()" class="discord"><i class="bx bxl-discord-alt"></i></button>
+                <a href="https://www.linkedin.com/in/arjendealdrey/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/tuhri444" class="github" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                <button onclick="copyDiscordToClipboard()" class="discord" aria-label="Copy Discord username"><i class="bx bxl-discord-alt"></i></button>
             </div>
-
 
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arjen de Aldrey</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -166,12 +201,11 @@
                 Honestly props to the creators of the template for making my life easier.
             </div>
 
-
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -186,7 +220,6 @@
 
     <!-- My Personal JS File -->
     <script src="assets/js/snippets.js"></script>
-
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

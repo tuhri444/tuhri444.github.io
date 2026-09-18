@@ -1,0 +1,328 @@
+/*--------------------------------------------------------------
+# Portfolio Entry — additions for project detail pages
+# Palette follows style.css: accent #0563bb, ink #45505b, wash #f7f8f9
+--------------------------------------------------------------*/
+
+/* Top bar ---------------------------------------------------- */
+.pd-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 9990;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #e6e9ec;
+    padding: 12px 0;
+}
+
+.pd-topbar .container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pd-topbar .pd-back {
+    font-weight: 600;
+    color: #45505b;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.pd-topbar .pd-back:hover {
+    color: #0563bb;
+}
+
+.pd-topbar .pd-topbar-name {
+    margin-left: auto;
+    font-weight: 600;
+    color: #45505b;
+}
+
+.pd-topbar .pd-topbar-links a {
+    color: #45505b;
+    font-size: 20px;
+    margin-left: 12px;
+    line-height: 1;
+}
+
+.pd-topbar .pd-topbar-links a:hover {
+    color: #0563bb;
+}
+
+/* Title block ------------------------------------------------ */
+.pd-title {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.pd-subtitle {
+    text-align: center;
+    color: #728394;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/* Tech pills ------------------------------------------------- */
+.pd-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    padding: 0;
+    list-style: none;
+}
+
+.pd-pills li {
+    background: #f2f3f5;
+    color: #45505b;
+    border: 1px solid #e0e4e8;
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.pd-pills li.pd-pill-accent {
+    background: #0563bb;
+    border-color: #0563bb;
+    color: #fff;
+}
+
+/* Link buttons ----------------------------------------------- */
+.pd-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.pd-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 2px solid #0563bb;
+    color: #0563bb;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.pd-links a:hover {
+    background: #0563bb;
+    color: #fff;
+}
+
+/* Contribution callout --------------------------------------- */
+.pd-contribution {
+    margin-top: 36px;
+    background: #f7f8f9;
+    border-left: 4px solid #0563bb;
+    border-radius: 4px;
+    padding: 26px 30px;
+}
+
+.pd-contribution h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.pd-contribution ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.pd-contribution li + li {
+    margin-top: 8px;
+}
+
+/* Detail sections -------------------------------------------- */
+.pd-section {
+    margin-bottom: 42px;
+}
+
+.pd-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #45505b;
+    margin-bottom: 14px;
+}
+
+.pd-block {
+    margin-bottom: 14px;
+}
+
+.pd-block > .pd-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0563bb;
+    margin-bottom: 4px;
+}
+
+.pd-block.pd-outcome {
+    background: #f7f8f9;
+    border-radius: 4px;
+    padding: 14px 18px;
+}
+
+.pd-block.pd-outcome > .pd-label {
+    color: #1a8a4a;
+}
+
+/* Code blocks ------------------------------------------------ */
+.pd-code {
+    margin: 18px 0 6px;
+    border: 1px solid #e0e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.pd-code figcaption {
+    background: #f2f3f5;
+    border-bottom: 1px solid #e0e4e8;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #728394;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pd-code pre {
+    margin: 0;
+    max-height: 480px;
+}
+
+.pd-code pre code {
+    font-size: 13px;
+    line-height: 1.55;
+    padding: 16px 18px;
+}
+
+/* Media ------------------------------------------------------ */
+.portfolio-details .portfolio-details-slider img,
+.portfolio-details .portfolio-details-slider video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.pd-caption {
+    text-align: center;
+    font-size: 13px;
+    color: #728394;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Prev / next ------------------------------------------------ */
+.pd-pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 50px;
+    padding-top: 26px;
+    border-top: 1px solid #e6e9ec;
+}
+
+.pd-pagination a {
+    display: flex;
+    flex-direction: column;
+    max-width: 46%;
+    color: #45505b;
+}
+
+.pd-pagination a:hover {
+    color: #0563bb;
+}
+
+.pd-pagination .pd-pagination-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #728394;
+}
+
+.pd-pagination .pd-pagination-title {
+    font-weight: 600;
+}
+
+.pd-pagination .pd-next {
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Mobile ----------------------------------------------------- */
+@media (max-width: 768px) {
+    .pd-topbar .pd-topbar-name {
+        display: none;
+    }
+
+    .pd-contribution {
+        padding: 20px;
+    }
+
+    .pd-pagination {
+        flex-direction: column;
+    }
+
+    .pd-pagination a,
+    .pd-pagination .pd-next {
+        max-width: 100%;
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+/* Playable embed --------------------------------------------- */
+.pd-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--pd-embed-aspect, 16 / 10);
+    background: #f2f3f5;
+    border: 1px solid #e0e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.pd-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pd-embed {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* Embedded video inside a slider slide ----------------------- */
+.pd-slide-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--pd-embed-aspect, 16 / 9);
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.pd-slide-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
